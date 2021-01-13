@@ -5,29 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
-  <header>
-    <ul id=navigation>
-      <li><a href="#">ホーム</a>
-        <ul>
-          <li><a href="#">link1</a></li>
-          <li><a href="#">link2</a></li>
-        </ul>
-      </li>
-      <li><a href="#">1ページ</a>
-        <ul>
-          <li><a href="#">link1</a></li>
-          <li><a href="#">link2</a></li>
-        </ul>
-      </li>
-      <li><a href="#">2ページ</a>
-        <ul>
-          <li><a href="#">link1</a></li>
-          <li><a href="#">link2</a></li>
-        </ul>
-      </li>
-    </ul>
+  <div class="container">
+    <header>
+      
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">Navbar</a>
+          <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>             
+              </li>
+              </ul>
+
+          </div>
+        </div>
+      </nav>
+      
   </header>
     <h1 class="subject">ぼっちカフェ巡り~in 東京~</h1>
     <h2 class="topic">スコーンが安くて美味しい渋谷のカフェ 『人間関係 ~cafe de copain~』</h2>
@@ -51,39 +54,43 @@
       <li class="info">スコーンが１つ120円, コーヒーが230円から、ランチセットが580円からと、ぜーんぶ安い</li>
       <li class="info">読書したり、NETFLIXを見てたんですが、店内のざわざわが快適でちょうど良かった。</li>
     </ul>
-    <footer>
+    <div class="container">
       <ul class="introduction">
         <img class="profile" src="img/IMG_0927.PNG" alt="Sota Tsurushima">
         <li>私は鶴島颯太です。</li>
         <li>最近の投稿</li>
         <li>カテゴリー</li>  
       </ul>
-      </footer>
-
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.6432551950697!2d139.69668641525826!3d35.66116008019895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca854f6a1ef%3A0x7df1c06f6622b079!2z5Lq66ZaT6Zai5L-C77yIY2FmZSBkZSBjb3BhaW7vvIk!5e0!3m2!1sja!2sjp!4v1603699735956!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-
-    <div class="Form">
-      <div class="Form-Item">
-      </div>
-      <div class="Form-Item">
-        <p>氏名</p>
-        <input type="text" class="Form-Item-Input" placeholder="例）山田太郎">
-      </div>
-      <div class="Form-Item">
-        <p>電話番号</p>
-        <input type="text" class="Form-Item-Input" placeholder="例）000-0000-0000">
-      </div>
-      <div class="Form-Item">
-        <p>メールアドレス</p>
-        <input type="email" class="Form-Item-Input" placeholder="例）example@gmail.com">
-      </div>
-      <div class="Form-Item">
-        <p>お問い合わせ内容</p>
-        <textarea></textarea>
-      </div>
-      <input type="submit" class="Form-Btn" value="送信する">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.6432551950697!2d139.69668641525826!3d35.66116008019895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca854f6a1ef%3A0x7df1c06f6622b079!2z5Lq66ZaT6Zai5L-C77yIY2FmZSBkZSBjb3BhaW7vvIk!5e0!3m2!1sja!2sjp!4v1603699735956!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
-  
+
+   
+
+    <footer>
+      <form>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Example select</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Example textarea</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+     
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 </html>
-
